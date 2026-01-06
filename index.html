@@ -1,44 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="grid-container">
-            <header class="header">
-                <div class="menu-icon">
-                    <span class="material-icons-outlined">Menu</span>
-                </div>
 
-                <div class="close">
-                    <span class="material-symbols-sharp">close</span>
-                </div>
-            </header>
+<div class="layout">
 
-            <div>
-                <a href="#">
-                    <span class="material-symbols-sharp">grid view</span>
-                    <h3>Dashboard</h3>
-                </a>
-            </div>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">Dashboard</h2>
+    <nav>
+      <a class="active">Home</a>
+      <a>Profile</a>
+      <a>Messages</a>
+      <a>History</a>
+      <a>Tasks</a>
+      <a>Communities</a>
+      <a>Settings</a>
+      <a>Support</a>
+      <a>Privacy</a>
+    </nav>
+  </aside>
 
+  <!-- Main Content -->
+  <main class="main">
 
-        <main>
-            <!-- <h1>Main</h1> -->
-        </main>
+    <!-- Header -->
+    <header class="header">
+      <input type="text" placeholder="Search..." />
+      <div class="user">
+        <img src="assets/avatar.png" alt="user">
+        <span>Morgan Oakley</span>
+      </div>
+    </header>
 
-        <div class="right">
-            <!-- <h1>Right</h1> -->
+    <!-- Dashboard Content -->
+    <section class="content">
+
+      <!-- Projects -->
+      <div class="projects">
+        <h3>Your Projects</h3>
+
+        <div class="cards">
+          <div class="card">
+            <h4>Super Cool Project</h4>
+            <p>Short description of the project.</p>
+          </div>
+
+          <div class="card">
+            <h4>Less Cool Project</h4>
+            <p>Short description of the project.</p>
+          </div>
+
+          <div class="card">
+            <h4>Impossible App</h4>
+            <p>Short description of the project.</p>
+          </div>
+
+          <div class="card">
+            <h4>Easy Peasy App</h4>
+            <p>Short description of the project.</p>
+          </div>
+
+          <div class="card">
+            <h4>Ad Blocker</h4>
+            <p>Short description of the project.</p>
+          </div>
+
+          <div class="card">
+            <h4>Money Maker</h4>
+            <p>Short description of the project.</p>
+          </div>
         </div>
-    </div>
+      </div>
 
+      <!-- Right Panel -->
+      <aside class="right-panel">
+        <div class="box">
+          <h4>Announcements</h4>
+          <p>Site maintenance notice.</p>
+          <p>Community updates.</p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="box">
+          <h4>Trending</h4>
+          <p>@tegan</p>
+          <p>@morgan</p>
+          <p>@kendall</p>
+        </div>
+      </aside>
+
+    </section>
+
+  </main>
+</div>
+
 </body>
-
 </html>
